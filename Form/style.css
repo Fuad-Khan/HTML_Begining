@@ -3,4 +3,23 @@
     width: 50%;
     border: 3px solid green;
     padding: 10px;
+    background-color: rgb(170, 200, 227);
 }
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 100%;
+  }
+
+  label {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+  }
