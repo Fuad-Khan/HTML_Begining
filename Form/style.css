@@ -1,25 +1,65 @@
+body {
+  background-color: rgb(119, 255, 246);
+}
 .dform {
+  width: 50%;
     margin: auto;
-    width: 50%;
+    
     border: 3px solid green;
     padding: 10px;
     background-color: rgb(170, 200, 227);
 }
-input {
+input[type="text"],[type="email"],[type="password"],[type="file"]
+ {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input [type="radio"],[type="checkbox"]
+  {
+    margin: 10px;
+  }
+
+  select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
   }
   textarea {
     width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input [type="reset"],[type="submit"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
 
   label {
     text-decoration: underline;
     font-weight: bold;
     font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  @media only screen and (max-width: 500px) {
+    body {
+      background-color: lightblue;
+    }
+    
+    .dform {
+      width: 50%;
+    }
   }

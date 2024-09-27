@@ -1,78 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Form</title>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Free html tutorial" />
-    <meta name="keywords" content="html, HTML, Html" />
-    <meta name="author" content="Fuad Khan" />
+<head>
+  <title>Form</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free html tutorial" />
+  <meta name="keywords" content="html, HTML, Html" />
+  <meta name="author" content="Fuad Khan" />
 
-    <style>
-      body {
-        background-color: rgb(119, 255, 246);
-      }
-    </style>
-  </head>
-  <body>
-    <!-- form -->
-    <!--  -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
 
-    <h1 style="text-align: center; color: rgb(204, 6, 118)">
-      <u>My Form</u>
-    </h1>
-    <div class="dform">
-    <form action="https://formspree.io/f/mrgvenye" method="post">
+
+</head>
+
+<body>
+  <h1 style="text-align: center; color: rgb(204, 6, 118)">
+    <u>My Form</u>
+  </h1>
+  <div class="dform">
+    <form id="myForm">
       <div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required /><br />
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" required /><br />
       </div>
       <br />
       <div>
-        <label for="Email">Email:</label>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="email" required />
       </div>
       <br />
       <div>
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required />
-        <!-- <br /> -->
-        <!-- <input type="checkbox" onclick="myFunction()">Show Password -->
-      </div>
-      <br />
-      <div>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" name="dob" id="dob" />
       </div>
       <br />
       <div>
         <label for="photo">Photo:</label>
-        <input type="file" name="photo" id="photo" />
+        <input type="file" name="photo" id="photo" required />
       </div>
       <br />
       <div>
         <label for="gender">Gender:</label>
-        <input type="radio" name="gender" id="male" value="male" />Male
+        <input type="radio" name="gender" id="male" value="male" > Male
         <input type="radio" name="gender" id="female" value="female" />Female
       </div>
       <br />
       <div>
         <label for="religion">Religion:</label>
-        <input
-          type="checkbox"
-          name="religion"
-          id="islam"
-          value="islam"
-          checked
-        />Islam
+        <input type="checkbox" name="religion" id="islam" value="islam" />Islam
         <input type="checkbox" name="religion" id="hindu" value="hindu" />Hindu
       </div>
       <br />
+
+      <div class="error" id="errorMessage"></div>
+      <br />
+
       <div>
         <label for="department">Department:</label>
         <select name="department">
@@ -85,7 +71,7 @@
       <br />
       <div>
         <label for="comment">Comment:</label><br />
-        <textarea cols="30" rows="10"></textarea>
+        <textarea name="comment" cols="30" rows="10"></textarea>
       </div>
       <br />
 
@@ -95,5 +81,6 @@
       </div>
     </form>
   </div>
-  </body>
+</body>
+
 </html>
